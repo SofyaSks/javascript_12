@@ -9,12 +9,20 @@
 </head>
 <body>
     <form id="anq" action="">
-        <!-- <label for=""></label> -->
        Имя: <input placeholder="Имя"> <!-- по умолчанию text-->
        Фамилия: <input placeholder="Фамилия">
-       Дата рождения: <input type="date">
-       Пол Ж: <input value="F" name="gender" type="radio" onchange="colorize()">
-       Пол М: <input value="M" name="gender" type="radio" onchange="colorize()">
+       Дата рождения: <input type="date" onchange="countAge()">
+       Возраст: <input type="number" id="age" placeholder="Возраст">
+
+       <fieldset>
+        <legend> Пол </legend>
+         <label for="fem">Ж:</label>
+         <input id="fem" value="F" name="gender" type="radio" onchange="colorize()">
+         <label for="male">M:</label>
+         <input id="male" value="M" name="gender" type="radio" onchange="colorize()">
+       </fieldset>
+
+       
 
 
     </form>
